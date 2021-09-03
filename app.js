@@ -4,14 +4,20 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 const port = process.env.PORT || 3000;
-//const ejs = require('ejs');
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
 
 app.get('/',(req, res) => {
-    res.sendFile(__dirname+'/Data.html');
+    res.render("home");
 })
 
 app.get('/about',(req, res) => {
-    res.sendFile(__dirname+'/Aboutus.html');
+    res.render("about");
+})
+
+app.get('/contact',(req, res) => {
+    res.render("contact");
 })
 
 
