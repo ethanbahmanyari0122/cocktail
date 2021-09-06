@@ -17,7 +17,7 @@ app.get('/about',(req, res) => {
 })
 
 app.get('/contact',(req, res) => {
-    res.render("contac");
+    res.render("contact");
 })
 
 
