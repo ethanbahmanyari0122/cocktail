@@ -3,7 +3,7 @@ name: Node Github CI
 on:
   push:
     branches:
-      - master
+      - [opend]
 
 jobs:
   test:
