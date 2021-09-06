@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "ncc build app.js -o dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "mocha ./test/* --exit"
+  
   },
   "repository": {
     "type": "git",
