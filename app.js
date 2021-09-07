@@ -20,6 +20,7 @@ app.get('/contact',(req, res) => {
     res.render("contact");
 })
 
+module.exports = app; 
 
 
 

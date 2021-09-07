@@ -3,6 +3,6 @@ const app = require("../app");
 
 describe("GET /", () => {
   it("respond with ", (done) => {
-    request(app).get("/").expect("../views/home", done);
+    request(app).get("/").expect("home", done);
   })
 });
