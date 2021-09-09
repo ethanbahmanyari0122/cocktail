@@ -35,4 +35,3 @@ describe('hi', async () => {
   await request(app).get('/contact')
                     .expect(200)
 })
-
