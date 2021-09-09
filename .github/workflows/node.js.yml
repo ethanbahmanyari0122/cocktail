@@ -29,5 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm install --global mocha 
-    - run: npm install --global supertest 
+    - run: npm install --global supertest
+    - run: npm install supertest --save-dev
+    - run: npm install supertest -g  
     - run: npm test
