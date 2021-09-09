@@ -29,16 +29,6 @@ jobs:
     - run: npm install supertest --save-dev
     - run: npm install supertest -g  
     - run: npm test
-        
-  build-on-ubuntu: 
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "joycocktail" #Must be unique in Heroku
-          heroku_email: "rthan.bhm@outlook.com"
 
   test:
     runs-on: ubuntu-latest
@@ -75,3 +65,13 @@ jobs:
           npm install --production
           pm2 restart node-app           
 
+
+  build-on-ubuntu: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "joycocktail" #Must be unique in Heroku
+          heroku_email: "rthan.bhm@outlook.com"
