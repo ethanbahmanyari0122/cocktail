@@ -11,9 +11,79 @@
         font-size: 3.5rem;
     }
 }
-.navbar{
+
+.navbar {
     background-color: #7400B8;
 }
-.aqua-color{
+
+.aqua-color {
     background-color: #80FFDB;
+}
+
+#navBar {
+    height: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#link_bar {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#footer {
+    background-color: #7400B8;
+    color: white;
+    margin-top: 50px;
+}
+
+#about_image {
+    width: 100%;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+#text_about {
+    font-size: 19px;
+    width: 90%;
+    text-align: center;
+    margin-left: 60px;
+}
+
+#category_img {
+    width: 60%;
+    height: 65%;
+    border-radius: 60%;
+}
+
+#alcoholic_head {
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7400B8;
+    text-align: center;
+    border-bottom: 1px solid #7400B8;
+}
+
+#img_recip {
+    width: 105%;
+    border-radius: 30px;
+    margin-left: 70px;
+}
+
+#text_recip {
+    width: 400px;
+}
+
+#recip_text {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 30px;
+}
+
+#prepare_text {
+    padding-top: 60px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
