@@ -39,4 +39,4 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "joycocktail" #Must be unique in Heroku
-          heroku_email: "rthan.bhm@outlook.com"       
+          heroku_email: "ethan.bhm@outlook.com"       
