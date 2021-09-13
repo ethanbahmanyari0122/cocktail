@@ -17,12 +17,19 @@ app.get('/about',(req, res) => {
     res.render("about");
 })
 
-app.get('/contact',(req, res) => {
-    res.render("contact");
+app.get('/alcoholic',(req, res) => {
+    res.render("alcoholic");
+})
+
+app.get('/non_alcoholic',(req, res) => {
+    res.render("non_alcoholic");
+})
+
+app.get('/recipe',(req, res) => {
+    res.render("recipe");
 })
 
 module.exports = app; 
-
 
 
 app.listen(port,()=>
