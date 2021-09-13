@@ -3,9 +3,9 @@
 [JoyCocktailBar](https://joycocktail.herokuapp.com/) is a search engine for cocktails. \
 Find many cocktails at first sight or use our search engine to find your favorite cocktail. \
 The best way to discover new cocktails is to use the filter criteria "Category", "Ingredient", "Alcohol" or "Glass". \
-Once you've made your selection, you can easily add the ingredients to your [Bring! shopping list](#Node-Bring-Shopping API) app. \
+Once you've made your selection, you can easily add the ingredients to your [Bring! shopping list](#node-bring-shopping-api) app. \
 Simply get the ingredients and prepare your cocktail with the instructions. \
-Enjoy!
+Enjoy! 
 
 Website: https://joycocktail.herokuapp.com/
 
