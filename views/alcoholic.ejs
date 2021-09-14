@@ -5,44 +5,48 @@
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
+        <div class="col-lg-4" >
+            <%cocktails.forEach(cocktail => {%>
+            <h2><%=cocktail.strDrink%></h2>
             <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="/recipes/<%=cocktail.strDrink%>" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
+            <%});%>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4" style="margin-top: 60px;">
-            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">
-            <h2>Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+    </div>
+
+
+<!--        <div class="col-lg-4" style="margin-top: 60px;">-->
+<!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
+<!--            <h2>Heading</h2>-->
+<!--            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>-->
+<!--            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>-->
+<!--        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--        <div class="col-lg-4" style="margin-top: 60px;">-->
+<!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
+<!--            <h2>Heading</h2>-->
+<!--            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>-->
+<!--            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>-->
+<!--        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--        <div class="col-lg-4" style="margin-top: 60px;">-->
+<!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
+<!--            <h2>Heading</h2>-->
+<!--            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>-->
+<!--            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>-->
+<!--        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--        <div class="col-lg-4" style="margin-top: 60px;">-->
+<!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
+<!--            <h2>Heading</h2>-->
+<!--            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>-->
+<!--            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>-->
+<!--        </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
+<!--        <div class="col-lg-4" style="margin-top: 60px;">-->
+<!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
+<!--            <h2>Heading</h2>-->
+<!--            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>-->
+<!--            <p><a class="btn btn-secondary" href="/recipe" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>-->
+<!--        </div>-->
         
-        
-    </div><!-- /.row -->
+<!--        -->
+<!--    </div>-->
 
 <%- include('partials/footer') -%>
