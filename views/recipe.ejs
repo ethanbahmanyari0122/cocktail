@@ -1,19 +1,21 @@
 <%- include('partials/header') -%>
 
-<div style="margin-top: 160px;"></div>
-
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="<%= eachRecipe[0].strDrinkThumb%>" id="img_recip">
+            <img src="<%= eachRecipe[0].strDrinkThumb%>" class="img_recip" style="margin-top: 50px; border-radius: 30px;     width: 120%;">
         </div>
         <div class="col-4" id="text_recip">
-            <div id="recipe_text">
-            <h2  style="color: #e85d04;"><%= eachRecipe[0].strDrink%></h2>
-            <h5  style="color: black;">Ingredients:</h5>
+        <div id="recipe_text" style="background-color: white; padding:15px; margin-top: 180px; border-radius: 25px; box-shadow: 1px 1px 30px #505050;">
+            <h2  style="color: #e63946; font-weight: 800; font-family:'Nunito';"><%= eachRecipe[0].strDrink%></h2>
+            <h5  style="color: black; background-color: white;  font-family:'Nunito';">Ingredients:</h5>
             <%for(let i = 1; i < 16; i++){%>
                 <%if(eachRecipe[0][`strIngredient${i.toString()}`]){%>
-                <p style="color: black;"><%=eachRecipe[0][`strIngredient${i.toString()}`]%><br/>
+                <p style="color: black;  font-family:'Nunito';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16" style="color: #e63946;">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                      </svg>
+                <%=eachRecipe[0][`strIngredient${i.toString()}`]%>
                 <%}}%>
             </p>
         </div>
@@ -21,10 +23,10 @@
     </div>
 
     <div id="prepare_text">
-    <h2>How to prepar?</h2>
-        <p>  <%= eachRecipe[0].strInstructions%></p>
+        <h1 style="margin-top: 30px;  font-family:'Nunito'; color: #e63946;">How to prepar?</h1>
+        <p style=" font-family:'Nunito';">  <%= eachRecipe[0].strInstructions%></p>
         </div>
-</div>
+    </div>
 
 
 <%- include('partials/footer') -%>

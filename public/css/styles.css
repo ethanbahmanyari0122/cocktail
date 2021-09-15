@@ -5,6 +5,7 @@
     -moz-user-select: none;
     user-select: none;
 }
+
 /*carousel{}*/
 
 
@@ -34,22 +35,26 @@
     font-size: 12px;
     letter-spacing: 5px;
 }
-.dropDownItem{
+
+.dropDownItem {
     font-size: 15px;
     letter-spacing: 1px;
 }
+
 #link_bar {
     font-size: 20px;
-    font-weight:200;
+    font-weight: 200;
     margin-right: 10px;
     margin-left: 10px;
 }
+
 #navbarDropdownMenuLink {
     font-size: 20px;
     font-weight: 100;
     margin-right: 10px;
     margin-left: 10px;
 }
+
 #footer {
     position: page;
 }
@@ -78,9 +83,9 @@
 #alcoholic_head {
     font-size: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #e85d04;
+    color: #e63946;
     text-align: center;
-    border-bottom: 1px solid #e85d04;
+    border-bottom: 1px solid #e63946;
 }
 
 #img_recip {
