@@ -1,13 +1,14 @@
 <%- include('partials/header') -%>
-<div style="margin-top: 60px;"></div>
+
+<div style="margin-top: 160px;"></div>
+
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="https://cdn.pixabay.com/photo/2018/07/12/21/59/drink-3534434_1280.jpg" id="img_recip">
+            <img src="<%= eachRecipe[0].strDrinkThumb%>" id="img_recip">
         </div>
         <div class="col-4" id="text_recip">
             <div id="recipe_text">
-
             <h2  style="color: #e85d04;"><%= eachRecipe[0].strDrink%></h2>
             <h5  style="color: black;">Ingredients:</h5>
             <%for(let i = 1; i < 16; i++){%>
