@@ -51,9 +51,11 @@
 }
 
 #category_img {
-    width: 60%;
-    height: 65%;
+    width: 20%;
+    height: 25%;
     border-radius: 60%;
+    margin: 0;
+    padding: 0;
 }
 
 #alcoholic_head {
