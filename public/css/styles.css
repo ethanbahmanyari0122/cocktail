@@ -5,6 +5,8 @@
     -moz-user-select: none;
     user-select: none;
 }
+/*carousel{}*/
+
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
