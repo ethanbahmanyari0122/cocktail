@@ -10,14 +10,10 @@
 
             <h2  style="color: #e85d04;"><%= eachRecipe[0].strDrink%></h2>
             <h5  style="color: black;">Ingredients:</h5>
-            <p style="color: black;">Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
-               Mit dem sogenannten Web 2.0 <br/>
+            <%for(let i = 1; i < 16; i++){%>
+                <%if(eachRecipe[0][`strIngredient${i.toString()}`]){%>
+                <p style="color: black;"><%=eachRecipe[0][`strIngredient${i.toString()}`]%><br/>
+                <%}}%>
             </p>
         </div>
         </div>
@@ -25,27 +21,14 @@
 
     <div id="prepare_text">
     <h2>How to prepar?</h2>
-    <p>   Mit dem sogenannten Web 2.0 wurden ab etwa den 2000er Jahren Webseiten populär,
-          deren Inhalt der Nutzer nicht nur wie etwa bei Nachrichten-Seiten passiv ansehen,
-          sondern selbst ändern und ergänzen kann, z. B. um eigene Inhalte zu veröffentlichen 
-          oder mit anderen Nutzern zu kommunizieren. Dazu zählen Blogs als private Meinungsseiten, 
-          von einer losen Autorengemeinschaft geschaffene Seiten nach dem Wiki-Prinzip und Soziale 
-          Netzwerke wie Foren. Serverseitige Techniken und (Skript-)Sprachen, die diese Interaktivität 
-          umsetzen, sind vor allem CGI, Python, ASP, Apache Wicket, JSF, ColdFusion, Ruby, PHP und SSI. 
-          Zu clientseitigen Techniken, die z. B. über Filter die Inhalte individualisieren, gehören unter 
-          anderem CSS, JavaScript oder Java, wobei Java hauptsächlich zur plattformneutralen 
-          Ausführung von Programmen dient, die oft als Webanwendungen über das Internet geladen 
-          werden und mit internetbasierenden Datenbanken (z. B. SAP-Clients) kommunizieren. 
-          Mit der Interaktivität wurde der Einsatz von Suchmaschinen möglich.<br/><br/>
-          ASP, Apache Wicket, JSF, ColdFusion, Ruby, PHP und SSI. 
-          Zu clientseitigen Techniken, die z. B. über Filter die Inhalte individualisieren, gehören unter 
-          anderem CSS, JavaScript oder Java, wobei Java hauptsächlich zur plattformneutralen 
-          Ausführung von Programmen dient, die oft als Webanwendungen über das Internet geladen 
-          werden und mit internetbasierenden Datenbanken (z. B. SAP-Clients) kommunizieren. 
-          Mit der Interaktivität wurde der Einsatz von Suchmaschinen möglich.
-        </p>
+        <p>  <%= eachRecipe[0]. strInstructions%></p>
         </div>
 </div>
 
 
 <%- include('partials/footer') -%>
+
+
+for(let i = 1; i < 16; i++){
+ if(strIngredient + "i" !== null){
+    }}
