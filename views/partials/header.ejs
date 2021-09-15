@@ -13,8 +13,15 @@
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <meta name="theme-color" content="#7952b3">
-
-
+    <!--    Footer styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">-->
+    <!--    <link rel="stylesheet" href="https://demo.tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/css/demo.css">-->
+    <link rel="stylesheet" href="https://demo.tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/css/footer-distributed-with-address-and-phones.css">
+    <!--Header style-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/website-menu-17/css/A.style.css.pagespeed.cf.SrefZvnj6s.css">
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -25,34 +32,88 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navBar">
+    <div class="container-fluid px-md-5">
+        <div class="row justify-content-between">
+            <div class="col-md-8 order-md-last">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <a class="navbar-brand" href="index.html">Joy Cocktail <span>Find Your JOY...</span></a>
+                    </div>
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+                        <form action="#" class="searchform order-lg-last">
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control pl-3" placeholder="Search">
+                                <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="social-media">
+                    <p class="mb-0 d-flex">
+                        <a href="https://www.facebook.com/ethan.bhm" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                        <a href="https://twitter.com/bsccocktail?lang=en" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                        <a href="https://www.instagram.com/_dripbar_/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                        <a href="https://dribbble.com/tags/free_fun_fonts" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/" style="font-size: 30px; font-weight: 700;">Joy Cocktail-bar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/" id="link_bar">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about" id="link_bar">About us</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 25px; font-weight: 500;">
-                          Category
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="/alcoholic" style="font-size: 20px;">Alcoholic</a>
-                          <a class="dropdown-item" href="/non_alcoholic" style="font-size: 20px;">Non-Alcoholic</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="/alcoholic">Alcoholic Drinks</a>
+                            <a class="dropdown-item" href="/non_alcoholic">Non Alcoholic</a>
                         </div>
-                      </li>
+                    </li>
+                    <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
             </div>
         </div>
     </nav>
 </header>
+<!--style="font-size: 25px; font-weight: 500;"-->
+
+<!--<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navBar">-->
+<!--    <div class="container-fluid">-->
+<!--        <a href="#" class="navbar-brand">-->
+<!--            <img src="Photos/joy-bar.png"  height="80" alt="CoolBrand">-->
+<!--        </a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarCollapse">-->
+<!--            <ul class="navbar-nav me-auto mb-2 mb-md-0">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" href="/" id="link_bar">Home</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/about" id="link_bar">About us</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        Category-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--                        <a class="dropdown-item dropDownItem" href="/alcoholic">Alcoholic</a>-->
+<!--                        <a class="dropdown-item dropDownItem" href="/non_alcoholic" >Non-Alcoholic</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <form class="d-flex">-->
+<!--                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->

@@ -13,7 +13,7 @@
 }
 
 .navbar {
-    background-color: #fb8500;
+    background-color: #505050;
 }
 
 .aqua-color {
@@ -21,20 +21,35 @@
 }
 
 #navBar {
-    height: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /*height: 80px;*/
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
 }
-
+.dropDownItem{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
 #link_bar {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight:200;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-
+#navbarDropdownMenuLink {
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 #footer {
-    background-color: #fb8500;
-    color: white;
-    margin-top: 50px;
+    position: page;
 }
 
 #about_image {
