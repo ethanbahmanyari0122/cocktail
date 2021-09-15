@@ -7,8 +7,8 @@
     <div class="row">
         <div class="col-lg-4" >
             <%notCocktails.forEach(notCocktail => {%>
+            <img src="<%=notCocktail.strDrinkThumb%>" id="category_img">
             <h2><%=notCocktail.strDrink%></h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             <p><a class="btn btn-secondary" href="/recipes/<%=notCocktail.strDrink%>" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
             <%});%>
         </div><!-- /.col-lg-4 -->

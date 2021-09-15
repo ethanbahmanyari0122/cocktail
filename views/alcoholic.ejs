@@ -4,16 +4,18 @@
     <h1 id="alcoholic_head">Alcoholic</h1>
 
     <!-- Three columns of text below the carousel -->
+<div class="container">
     <div class="row">
+            <%cocktails.forEach(cocktail => {%>
+
         <div class="col-lg-4"  style="margin-top: 60px;">
-            <%cocktails.forEach(cocktail => {%>  
-            <img src=“<%=cocktail.strDrinkThumb%>“ id="category_img">    
+            <img src="<%=cocktail.strDrinkThumb%>" id="category_img">
             <h2><%=cocktail.strDrink%></h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             <p><a class="btn" href="/recipes/<%=cocktail.strDrink%>" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
-            <%});%>
         </div><!-- /.col-lg-4 -->
+            <%});%>
     </div>
+</div>
 
 
 <!--        <div class="col-lg-4" style="margin-top: 60px;">-->
