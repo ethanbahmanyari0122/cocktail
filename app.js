@@ -73,7 +73,9 @@ app.get('/recipes/:recipe', (req, res) => {
                 .query({i: recipe.idDrink})
                 .end((err, response) => {
                     if (err) { return console.log(err); }
+                    // Save the drinks api information to "eachRecipe"
                     eachRecipe = response.body.drinks;
+                    // Render recipe.ejs with option parameters "recipe" and "eachRecipe"
                     res.render('recipe' ,{recipe, eachRecipe:eachRecipe});
 
         })
@@ -95,8 +97,8 @@ app.get('/recipes/:recipe', (req, res) => {
 })
 
 // export this module to make it accessible from other classes
-module.exports = app; 
+module.exports = app;
 
 // Start listening the server on "port"
 app.listen(port,()=>
-    console.log("Server started on port " + port));
+    console.log(`Server started on port ${port}`));
