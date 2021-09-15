@@ -4,15 +4,20 @@
     <h1 id="alcoholic_head">Non-Alcoholic</h1>
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
-        <div class="col-lg-4" >
+    <div class="container">
+        <div class="row">
             <%notCocktails.forEach(notCocktail => {%>
-            <img src="<%=notCocktail.strDrinkThumb%>" id="category_img">
-            <h2><%=notCocktail.strDrink%></h2>
-            <p><a class="btn btn-secondary" href="/recipes/<%=notCocktail.strDrink%>" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
+
+            <div class="col-lg-4"  style="margin-top: 60px;">
+                <img src="<%=notCocktail.strDrinkThumb%>" id="category_img">
+                <h2><%=notCocktail.strDrink%></h2>
+                <p><a class="btn btn-secondary" href="/recipes/<%=notCocktail.strDrink%>" style="background-color: #e85d04; color: white;">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
             <%});%>
-        </div><!-- /.col-lg-4 -->
+        </div>
     </div>
+    <div class="row">
+
 <!--        <div class="col-lg-4" style="margin-top: 60px;">-->
 <!--            <img src="https://cdn.pixabay.com/photo/2018/04/17/11/03/cocktail-3327242__480.jpg" id="category_img">-->
 <!--            <h2>Heading</h2>-->
