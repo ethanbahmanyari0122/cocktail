@@ -75,6 +75,7 @@ app.get('/recipes/:recipe', (req, res) => {
                     if (err) { return console.log(err); }
                     eachRecipe = response.body.drinks;
                     res.render('recipe' ,{recipe, eachRecipe:eachRecipe});
+
         })
 
     }})
