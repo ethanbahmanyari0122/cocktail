@@ -5,7 +5,9 @@
     -moz-user-select: none;
     user-select: none;
 }
-
+body{
+    background-color: #DDDDDD;
+}
 /*about us the middle picture*/
 .cid-qyvcqB36eR1 {
     padding-top: 135px;
