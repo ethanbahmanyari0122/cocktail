@@ -13,5 +13,11 @@
     <orderEntry type="library" name="A.style.css.pagespeed.cf.SrefZvnj6s" level="application" />
     <orderEntry type="library" name="jquery-3.2.1.slim" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="mbr-additional" level="application" />
+    <orderEntry type="library" name="style" level="application" />
+    <orderEntry type="library" name="bootstrap-reboot" level="application" />
+    <orderEntry type="library" name="bootstrap-grid" level="application" />
+    <orderEntry type="library" name="tether" level="application" />
+    <orderEntry type="library" name="mobirise-icons" level="application" />
   </component>
 </module>

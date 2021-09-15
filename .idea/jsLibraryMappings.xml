@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{A.style.css.pagespeed.cf.SrefZvnj6s, font-awesome, footer-distributed-with-address-and-phones, jquery-3.2.1.slim, popper.js}" />
+    <file url="PROJECT" libraries="{A.style.css.pagespeed.cf.SrefZvnj6s, bootstrap-grid, bootstrap-reboot, font-awesome, footer-distributed-with-address-and-phones, jquery-3.2.1.slim, mbr-additional, mobirise-icons, popper.js, style, tether}" />
   </component>
 </project>

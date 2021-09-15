@@ -6,7 +6,12 @@
     user-select: none;
 }
 
-/*carousel{}*/
+/*about us the middle picture*/
+.cid-qyvcqB36eR1 {
+    padding-top: 135px;
+    padding-bottom: 135px;
+    background-image: url("https://coolwallpapers.me/picsup/5697160-bar-wallpapers.jpg");
+}
 
 
 @media (min-width: 768px) {

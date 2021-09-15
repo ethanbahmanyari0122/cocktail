@@ -10,7 +10,7 @@ Forces image to be 100% width and not max width of 100%
 */
 .carousel-item .img-fluid {
     width:100%;
-    height:auto;
+    height: auto;
 }
 
 /*
