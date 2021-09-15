@@ -1,15 +1,15 @@
 <%- include('partials/header') -%>
 <div style="margin-top: 50px;"></div>
 <div class="container marketing">
-    <h1 id="alcoholic_head">Alcoholic</h1>
+    <h1 id="alcoholic_head" style="font-family: 'Nunito';">Alcoholic</h1>
 
     <!-- Three columns of text below the carousel -->
 <div class="container">
     <div class="row">
             <%cocktails.forEach(cocktail => {%>
-        <div class="col-lg-4"  style="margin-top: 60px;">
+        <div class="col-lg-4"  style="margin-top: 60px; text-align: center;">
             <img src="<%=cocktail.strDrinkThumb%>" id="category_img">
-            <h2><%=cocktail.strDrink%></h2>
+            <h2 style="font-family: 'Nunito'; font-size: 30px;"><%=cocktail.strDrink%></h2>
             <p><a class="btn" href="/recipes/<%=cocktail.strDrink%>" style="background-color: #e63946; color: white;">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
             <%});%>

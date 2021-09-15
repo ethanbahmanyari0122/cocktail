@@ -1,16 +1,16 @@
 <%- include('partials/header') -%>
 <div style="margin-top: 50px;"></div>
 <div class="container marketing">
-    <h1 id="alcoholic_head">Non-Alcoholic</h1>
+    <h1 id="alcoholic_head" style="font-family: 'Nunito';">Non-Alcoholic</h1>
 
     <!-- Three columns of text below the carousel -->
     <div class="container">
         <div class="row">
             <%notCocktails.forEach(notCocktail => {%>
 
-            <div class="col-lg-4"  style="margin-top: 60px;">
-                <img src="<%=notCocktail.strDrinkThumb%>" id="category_img">
-                <h2><%=notCocktail.strDrink%></h2>
+            <div class="col-lg-4"  style="margin-top: 60px; text-align: center;">
+                <img src="<%=notCocktail.strDrinkThumb%>" id="category_img" style="">
+                <h2 style="font-family: 'Nunito'; font-size: 30px;"><%=notCocktail.strDrink%></h2>
                 <p><a class="btn" href="/recipes/<%=notCocktail.strDrink%>" style="background-color: #e63946; color: white;">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <%});%>
