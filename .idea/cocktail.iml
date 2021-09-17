@@ -19,5 +19,6 @@
     <orderEntry type="library" name="bootstrap-grid" level="application" />
     <orderEntry type="library" name="tether" level="application" />
     <orderEntry type="library" name="mobirise-icons" level="application" />
+    <orderEntry type="library" name="bootstrap.bundle" level="application" />
   </component>
 </module>
