@@ -5,9 +5,11 @@
     -moz-user-select: none;
     user-select: none;
 }
-body{
+
+body {
     background-color: #DDDDDD;
 }
+
 /*about us the middle picture*/
 .cid-qyvcqB36eR1 {
     padding-top: 135px;
@@ -118,4 +120,8 @@ body{
     padding-top: 60px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img_home {
+    border-radius: 60px;
 }
