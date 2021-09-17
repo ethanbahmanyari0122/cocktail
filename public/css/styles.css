@@ -65,7 +65,7 @@ body {
 }
 
 #footer {
-   font-family: "Poppins", Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 #about_image {
@@ -89,6 +89,15 @@ body {
     padding: 0;
     margin-bottom: 15px;
 }
+
+#category_img:hover {
+    width: 300px;
+    height: 300px;
+    -moz-box-shadow: 0 0 50px #398ae6;
+    -webkit-box-shadow: 0 0 50px #398ae6;
+    box-shadow: 0 0 50px #398ae6;
+}
+
 
 #alcoholic_head {
     font-size: 100px;
